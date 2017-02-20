@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propogation is all about applying strategies which reduce the number of legal possibilies that need to be searched.  In the Naked Twins algorithm, we eliminate more choices by first identifying instances of naked twins (i.e. two boxes in the same row or column that have only two digit and both equal) to further reduce the number of choices in other boxes in the same row or column.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: To solve the diagonal sudoku probem, we applied several strategies to reduce the number of legal possible outcomes. Adding in two additional units representing the diagonal boxes, we implicitly add further constraints onto to the search space. Then, on each iteration of the search function, the elmination, only choice and naked twins strategies were employed to further narrow the number of legal guesses needing to be explored in the search tree.  The search function is called repeatedly until a solved version of the sudoku grid is found. 
 
 ### Install
 
